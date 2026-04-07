@@ -1290,6 +1290,19 @@ section,
   position: relative;
 }
 
+.limited {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: var(--default-color);
+  color: var(--contrast-color);
+  padding: 4px 15px 6px 15px;
+  margin: 0;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
 .pricing .featured .popular {
   position: absolute;
   top: 15px;
