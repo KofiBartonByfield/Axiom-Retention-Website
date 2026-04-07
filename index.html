@@ -39,6 +39,21 @@
     .contact-wrap { padding: 20px; border-radius: 10px; text-align: center; }
     .copy-feedback { font-size: 0.8rem; margin-top: 5px; opacity: 0.7; }
     .cta-btn {border:none; width:100%;}
+    /* Highlighting the active section in the nav */
+#navmenu a.active {
+  color: #D4AF37 !important; /* Axiom Gold */
+  font-weight: 700;
+}
+
+/* Optional: Add a small underline to the active link */
+#navmenu a.active::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: #D4AF37;
+  margin-top: 5px;
+}
   </style>
 </head>
 
@@ -51,7 +66,7 @@
       </a>
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#home" class="active">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#services">Services</a></li>
           <li><a href="#contact">Contact</a></li>
@@ -63,7 +78,7 @@
 
   <main class="main">
 
-    <section id="hero" class="hero section dark-background">
+    <section id="home" class="home section dark-background">
       <img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in">
       <div class="container text-center" data-aos="fade-up" data-aos-delay="100">
         <div class="row justify-content-center">
